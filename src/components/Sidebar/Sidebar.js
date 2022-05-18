@@ -1,14 +1,13 @@
 import React from 'react'
 import { SidebarData } from './SidebarData'
+import styles from './Sidebar.module.scss'
 
 const Sidebar = () => {
   return (
-    <ul className="sidebar">
+    <ul className={styles.sidebar}>
         {SidebarData.map((el, key) => (
-            <li key={key}>
-                {el.title}
-                <div>{el.icon}</div>
-                <i className="bi bi-calendar-event">dsad</i>
+            <li className={styles.sidebarLi} key={key}>
+                <div>{el.icon}</div>{el.title}
             </li>
             
         ))}
