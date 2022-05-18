@@ -2,15 +2,18 @@
 export const SidebarData = [
     {
         title: "Member List",
-        link: "./memberList"
+        link: "./memberList",
+        icon: <i className="bi bi-person"></i>
     },
     {
         title: "Manager List",
-        link: "./menagerList"
+        link: "./menagerList",
+        icon: <i className="bi bi-person"></i>
     },
     {
         title: "Event List",
-        link: "./eventList"
+        link: "./eventList",
+        icon: <i className="bi bi-calendar-event"></i>
     }
 ]
 
