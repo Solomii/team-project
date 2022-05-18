@@ -4,8 +4,8 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="App">
-      <h1>Team-Project</h1>
       <Sidebar />
+      <h1 className="lala">Team-Project</h1>
     </div>
   );
 }
