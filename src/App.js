@@ -1,13 +1,8 @@
 import React from "react";
-import { ForgotPasswordPage } from "./pages/ForgotPasswordPage/ForgotPasswordPage";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
-  return (
-    <div className="App">
-      <ForgotPasswordPage />
-    </div>
-  );
+  return <div className="App">1</div>;
 }
 
 export default App;
