@@ -1,15 +1,14 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom"
 
 import { SidebarData } from "./SidebarData";
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
   const [isSidebarBig, setIsSidebarBig] = useState(true);
-  const sidebarClasses = isSidebarBig ? styles.sidebar : styles.sidebar + " " + styles.sidebarActive;
-  const sidebarArrowClasses = isSidebarBig ? styles.sidebarArrow  : styles.sidebarArrow + " " + styles.sidebarArrowActive;
-  const sidebarLiClasses = isSidebarBig ? styles.sidebarLi  : styles.sidebarLi + " " + styles.sidebarLiActive;
-  const sidebarIconLiClasses = isSidebarBig ? styles.iconLi  : styles.iconLi + " " + styles.iconLiActive;
+  const sidebarClasses = isSidebarBig ? styles.sidebar : `${styles.sidebar} ${styles.sidebarActive}`;
+  const sidebarArrowClasses = isSidebarBig ? styles.sidebarArrow : `${styles.sidebarArrow} ${styles.sidebarArrowActive}`;
+  const sidebarLiClasses = isSidebarBig ? styles.sidebarLi : `${styles.sidebarLi} ${styles.sidebarLiActive}`;
+  const sidebarIconLiClasses = isSidebarBig ? styles.iconLi : `${styles.iconLi} ${styles.iconLiActive}`;
   
   return (
     <>
