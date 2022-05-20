@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import HomePage from "./pages/HomePage/HomePage";
+import StartPage from "./pages/StartPage/StartPage";
 
 function App() {
-  return <HomePage /> 
+  return <StartPage /> 
 }
 
 export default App;
