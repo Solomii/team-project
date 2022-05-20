@@ -1,7 +1,7 @@
 import {Outlet} from "react-router-dom";
 
-// import {Sidebar} from '../Sidebar';
-// import {TopBar} from '../TopBar';
+import Sidebar from "../Sidebar/Sidebar";
+import TopBar from "../TopBar/TopBar";
 
 import styles from './styles.module.scss';
 

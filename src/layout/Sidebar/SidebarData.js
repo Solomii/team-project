@@ -1,7 +1,7 @@
 export const SidebarData = [
   {
     title: "Profile",
-    link: "./profile",
+    link: "/profile",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ export const SidebarData = [
   },
   {
     title: "Member List",
-    link: "./memberList",
+    link: "/memberList",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export const SidebarData = [
   },
   {
     title: "Manager List",
-    link: "./menagerList",
+    link: "./managerList",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
