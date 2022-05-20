@@ -1,13 +1,10 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
+
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Sidebar />
-      <h1 className="lala">Team-Projectdsaaaaaaaaaasdasdasd</h1>
-    </div>
-  );
+  return <div className="App">team</div>;
+
 }
 
 export default App;
