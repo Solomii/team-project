@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-import HomePage from "./pages/HomePage/HomePage";
+import StartPage from "./pages/StartPage/StartPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import MemberListPage from "./pages/MemberListPage/MemberListPage";
 import ManagerListPage from "./pages/ManagerListPage/ManagerListPage";
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<StartPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/memberList" element={<MemberListPage />} />
           <Route path="/managerList" element={<ManagerListPage />} />
