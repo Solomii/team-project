@@ -2,12 +2,12 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
+
 import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import MemberListPage from "./pages/MemberListPage/MemberListPage";
 import ManagerListPage from "./pages/ManagerListPage/ManagerListPage";
 import Layout from "./layout/Layout/Layout";
-
 
 function App() {
   return (
