@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
-
 import StartPage from "./pages/StartPage/StartPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import MemberListPage from "./pages/MemberListPage/MemberListPage";
