@@ -1,8 +1,6 @@
 import {Outlet} from "react-router-dom";
-import Sidebar from "../../features/Sidebar/Sidebar";
-
-
-// import {TopBar} from '../TopBar';
+import Sidebar from "../Sidebar/Sidebar";
+import TopBar from "../TopBar/TopBar";
 
 import styles from './styles.module.scss';
 
@@ -11,7 +9,7 @@ const Layout = () => {
         <div className={styles.wrapper}>
             <Sidebar />
             <main className={styles.container}>
-                {/* <TopBar /> */}
+                <TopBar />
                 <Outlet />
             </main>
         </div>

@@ -38,10 +38,10 @@ const Sidebar = () => {
           <h2 className={styles.roleText}>Role:</h2>
         </div>
         <hr className={styles.horizonLine} />
-        <ul style={{paddingLeft: "0px"}}>
+        <ul style={{ paddingLeft: "0px" }}>
           {SidebarData.map((el, key) => (
             <Link key={key} className={styles.Link} to={el.link}>
-              <li className={sidebarLiClasses} >
+              <li className={sidebarLiClasses}>
                 <div className={sidebarIconLiClasses}>{el.icon}</div>
                 <div>{el.title}</div>
               </li>
