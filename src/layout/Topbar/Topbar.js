@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 // import { signOut } from 'firebase/auth'; 
 // import {useNavigate} from 'react-router-dom';
 
-import avatar from './images/avatar.svg';
-import profile from './images/profile.svg';
-import logout from './images/logout.svg';
+import avatar from '../../assets/images/avatar.svg';
+import profile from '../../assets/images/profile.svg';
+import logout from '../../assets/images/logout.svg';
 
 import styles from '../../assets/scss/topbar.module.scss';
 
