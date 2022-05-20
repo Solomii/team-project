@@ -14,10 +14,7 @@ import styles from './topbar.module.scss';
 
 function TopBar() {
     // const navigate = useNavigate();
-    const AuthHeader = 'div';
-    const DropDownListContainer ='div';
-    const DropDownList = 'div';
-
+    
     const [isOpen, setIsOpen] = useState(false);
     const [currentUser, setCurrentUser] = useState(null);
 
@@ -46,36 +43,36 @@ function TopBar() {
         <nav className={styles.navbar}>
             <div className={styles.navbarAuth}>
                 {isOpen && (
-                    <AuthHeader className={styles.authHeader} onClick={toggle}>
+                    <div className={styles.authHeader} onClick={toggle}>
                         <div>
-                            <span className={styles.email}>email.address@email.com</span>
+                            <span className='me-1'>email.address@email.com</span>
                             <img className={styles.avatar} src={avatar} alt='avatar'/>
                         </div>
-                    </AuthHeader>
+                    </div>
                 )}
                 {!isOpen && (
-                    <AuthHeader className={styles.authHeader} onClick={toggle}>
+                    <div className={styles.authHeader} onClick={toggle}>
                         <span className={styles.signIn}>Sign In</span>
-                    </AuthHeader>
+                    </div>
                 )}
 
                 {/* {currentUser && (
-                    <AuthHeader className={styles.authHeader} onClick={toggle}>
+                    <div className={styles.authHeader} onClick={toggle}>
                         <div>
                             <span className={styles.email}>`${currentUser.email}`</span>
                             <img className={styles.avatar} src={avatar} alt='avatar'/>
                         </div>
-                    </AuthHeader>
+                    </div>
                 )}
                 {!currentUser && (
-                    <AuthHeader className={styles.authHeader} onClick={signIn}>
+                    <div className={styles.authHeader} onClick={signIn}>
                         <span className={styles.signIn}>Sign In</span>
-                    </AuthHeader>
+                    </div>
                 )} */}
                      
                 
                 {isOpen && (
-                    <DropDownList className={styles.dropdownList} >
+                    <div className={styles.dropdownList} >
                         <div className={styles.dropdownItem} onClick={toggle} >
                             <img className={styles.imgProfile} src={profile} alt='profile' />
                             Profile
@@ -85,11 +82,11 @@ function TopBar() {
                             <img className={styles.imgProfile} src={logout} alt='logout' />
                             Sign Out 
                         </div>
-                    </DropDownList>
+                    </div>
                 )}
 
                 {/* {isOpen && (
-                    <DropDownList className={styles.dropdownList} >
+                    <div className={styles.dropdownList} >
                         <div className={styles.dropdownItem} onClick={goToProfile}>
                             <img className={styles.imgProfile} src={profile} alt='profile' />
                             Profile
@@ -99,7 +96,7 @@ function TopBar() {
                             <img className={styles.imgProfile} src={logout} alt='logout' />
                             Sign Out 
                         </div>
-                    </DropDownList>
+                    </div>
                 )} */}
 
             </div>
