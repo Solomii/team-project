@@ -1,9 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import HomePage from "./pages/HomePage/HomePage";
+import ProfilePage  from "./pages/ProfilePage/ProfilePage.js";
 
 function App() {
-  return <HomePage /> 
+  return (
+    <ProfilePage/>
+  )
+     
 }
 
 export default App;
