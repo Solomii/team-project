@@ -1,8 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
-  return <div className="App">1</div>;
+
+  return <HomePage /> 
+  
+
+  
+
 }
 
 export default App;
