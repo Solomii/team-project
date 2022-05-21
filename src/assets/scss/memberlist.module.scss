@@ -1,3 +1,11 @@
-.table {
-    background-color: red;
+.tableContainer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.flexBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

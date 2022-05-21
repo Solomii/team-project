@@ -1,27 +1,41 @@
 import React from "react";
-import styles from "../../assets/scss/memberlist.module.scss"
+
+import styles from "../../assets/scss/memberlist.module.scss";
+// import Members from "../../features/Members";
+import { LoginButton } from "../../ui/button/LoginButton/LoginButton";
 
 const MemberList = () => {
   return (
-    <>
-      <table className={`table table-bordered ${styles.tableContainer}`}>
+    <div className={`${styles.tableContainer}`}>
+      <div className={styles.flexBlock}>
+        <h2 style={{ fontSize: "18px" }}>Members List</h2>
+        <div style={{ width: "200px" }}>
+          <LoginButton buttonText={"Add User"} />
+        </div>
+      </div>
+      <table className={`table table-bordered`}>
         <thead className={`table-light ${styles.tableHead}`}>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th className={styles.rd} scope="col">Handle</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Organisation</th>
+            <th scope="col">Phone</th>
           </tr>
         </thead>
         <tbody>
-        <th className={`memberlist.module.scss`} scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <tr>
+            <th scope="row">1</th>
+            <td>Gustavus</td>
+            <td>Adolphus</td>
+            <td>Army</td>
+            <td>+3806712494</td>
+          </tr>
+          {/* {MemberList} */}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 
-export default MemberList
+export default MemberList;

@@ -1,9 +1,48 @@
-import React from 'react'
+import React from "react";
+
+import { LoginButton } from "../../ui/button/LoginButton/LoginButton";
+import styles from "../../assets/scss/memberlist.module.scss";
 
 const ManagerList = () => {
   return (
-    <div>ManagerListPage</div>
-  )
-}
+    <div>
+      <div className={`${styles.tableContainer}`}>
+        <div className={styles.flexBlock}>
+          <h2 style={{ fontSize: "18px" }}>Members management</h2>
+          <div style={{ width: "200px" }}>
+            <LoginButton buttonText={"Add User"} />
+          </div>
+        </div>
+        <table className={`table table-bordered`}>
+          <thead className={`table-light ${styles.tableHead}`}>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Organisation</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Score</th>
+              <th scope="col">Birth Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Gustavus</td>
+              <td>Adolphus</td>
+              <td>Army</td>
+              <td>@gmail</td>
+              <td>+3806712494</td>
+              <td>25</td>
+              <td>24.05.1598</td>
+            </tr>
+            {/* {MemberList} */}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
 
 export default ManagerList;
