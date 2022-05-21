@@ -6,10 +6,10 @@ import { ProfileButtonChangePassword } from '../../ui/button/ProfileButtons/Prof
 const Profile = () => {
   return (
     <div className={style.container}>
-      <div className={style.boxavatartext}>
+      <div className={style.box__avatar__text}>
         <div className={style.avatar} >
-        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" />
-        <ProfileButtonChangeAvatar/>
+        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3"/>
+          <ProfileButtonChangeAvatar buttonText={"Change avatar"}/>
       </div>
       <div className={style.text}>
         <p>First Name</p>
@@ -18,8 +18,8 @@ const Profile = () => {
         <p>Place in the ranking</p>
       </div>
       </div>
-       <div className={style.btnchangepass}>
-        <ProfileButtonChangePassword/>
+       <div className={style.btn__change__pass}>
+        <ProfileButtonChangePassword buttonText={"Change password"}/>
       </div>
     </div>
   )
