@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { SidebarData } from "./SidebarData";
-import styles from "./Sidebar.module.scss";
+import styles from "../../assets/scss/sidebar.module.scss";
 
 const Sidebar = () => {
   const [isSidebarBig, setIsSidebarBig] = useState(true);
