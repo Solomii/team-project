@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "../../assets/scss/profile.module.scss";
+
 import { ProfileButtonChangeAvatar } from '../../ui/button/ProfileButtons/ProfileButtonChangeAvatar/ProfileButtonChangeAvatar';
 import { ProfileButtonChangePassword } from '../../ui/button/ProfileButtons/ProfileButtonChangePassword/ProfileButtonChangePassword';
 

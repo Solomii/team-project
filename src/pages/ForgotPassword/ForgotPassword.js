@@ -1,8 +1,8 @@
 import React from "react";
+
 import { InputEmail } from "../../ui/input/InputEmail";
-import { InputPassword } from "../../ui/input/InputPassword";
 import { LoginButton } from "../../ui/button/LoginButton";
-import style from "../../assets/scss/forgotPass.module.scss";
+import style from "../../assets/scss/forgotPassword.module.scss";
 
 export const ForgotPassword = () => {
   return (
