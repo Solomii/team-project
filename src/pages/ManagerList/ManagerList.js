@@ -1,8 +1,10 @@
 import React from 'react'
+import { LoginButton } from '../../ui/button/LoginButton/LoginButton';
 
 const ManagerList = () => {
   return (
-    <div>ManagerListPage</div>
+    <div> Manager list</div>
+    
   )
 }
 
