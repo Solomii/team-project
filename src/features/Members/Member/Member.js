@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "../../../assets/scss/memberlist.module.scss";
+
 const Member = ({member}) => {
 //   return (
 //             {Manager || Admin ? 
@@ -12,6 +14,10 @@ const Member = ({member}) => {
 //                     <th scope="col">{member.phone}</th>
 //                     <th scope="col">{member.score}</th>
 //                     <th scope="col">{member.birthDate}</th>
+                    // <td className={styles.btnBlock}>
+                    //     <LoginButton className={styles.memberBtn} buttonText={"Edit"}>Edit</LoginButton>
+                    //     <LoginButton className={styles.memberBtn} buttonText={"Delete"}>Delete</LoginButton>
+                    // </td> 
 //                 </tr>)  :
 //                 (<tr>
 //                     <th scope="row">1</th>

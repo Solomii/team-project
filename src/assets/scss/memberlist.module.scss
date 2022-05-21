@@ -9,3 +9,15 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.btnBlock {
+    display: flex;
+    justify-content: space-around;
+    & * {
+        width: 100px;
+        height: 30px;
+    }
+}
+.tableRow {
+    text-align: center;
+    vertical-align: middle;
+}
