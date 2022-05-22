@@ -8,6 +8,8 @@ import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
 import Layout from "./ui/Layout";
+import EventList from "./pages/EventList/EventList";
+import ManagerManagment from "./pages/ManagerManagment/ManagerManagment";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/memberList" element={<MemberList />} />
           <Route path="/managerList" element={<ManagerList />} />
-          <Route path="/eventList" element={<ManagerList />} />
+          <Route path="/managerManagment" element={<ManagerManagment />} />
+          <Route path="/eventList" element={<EventList />} />
           <Route path="/event" element={<ManagerList />} />
         </Route>
       </Routes>

@@ -8,15 +8,15 @@ const ManagerList = () => {
     <div>
       <div className={`${styles.tableContainer}`}>
         <div className={styles.flexBlock}>
-          <h2 style={{ fontSize: "18px" }}>Members management</h2>
+          <h2 style={{ fontSize: "18px" }}>Members List</h2>
           <div style={{ width: "200px" }}>
-            <LoginButton buttonText={"Add User"} />
+            <LoginButton btnClass="btn-danger" buttonText={"Add User"} />
           </div>
         </div>
         <table className={`table table-bordered`}>
           <thead className={`table-light`}>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Avatar</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
               <th scope="col">Organisation</th>
@@ -43,7 +43,7 @@ const ManagerList = () => {
               </td>
               
             </tr>
-            {/* {MemberList} */}
+            {/* {Members} */}
           </tbody>
         </table>
       </div>

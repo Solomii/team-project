@@ -16,7 +16,7 @@ const MemberList = () => {
       <table className={`table table-bordered`}>
         <thead className={`table-light ${styles.tableHead}`}>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Avatar</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Organisation</th>
@@ -31,7 +31,7 @@ const MemberList = () => {
             <td>Army</td>
             <td>+3806712494</td>
           </tr>
-          {/* {MemberList} */}
+          {/* {Members} */}
         </tbody>
       </table>
     </div>

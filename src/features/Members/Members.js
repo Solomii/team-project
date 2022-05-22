@@ -4,8 +4,8 @@ import React from 'react'
 const Members = ({members}) => {
   return (
     <>
-      {/* {members.map((member, id) => (
-        <Member member={member} id={id}/>
+      {/* {members.map((manager, id) => (
+        <Manager manager={manager} id={id}/>
       ))} */}
     </>
   )
