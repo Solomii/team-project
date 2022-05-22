@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { Route, Routes } from "react-router-dom";
 
+import Layout from "./ui/Layout"
 import Start from "./pages/Start";
 import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
-import Layout from "./ui/Layout";
-import EventList from "./pages/EventList/EventList";
+import EventList from "./pages/EventList/";
 import ManagerManagment from "./pages/ManagerManagment/ManagerManagment";
 
 function App() {
