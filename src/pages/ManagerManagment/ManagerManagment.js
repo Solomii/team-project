@@ -13,7 +13,7 @@ const ManagerManagment = () => {
             <LoginButton buttonText={"Add Manager"} />
           </div>
         </div>
-        <table className={`table table-bordered`}>
+        <table className={`table table-bordered shadow`}>
           <thead className={`table-light ${styles.tableHead}`}>
             <tr>
               <th scope="col">Avatar</th>

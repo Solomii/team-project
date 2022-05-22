@@ -13,7 +13,7 @@ const ManagerList = () => {
             <LoginButton btnClass="btn-danger" buttonText={"Add User"} />
           </div>
         </div>
-        <table className={`table table-bordered`}>
+        <table className={`table table-bordered shadow`}>
           <thead className={`table-light`}>
             <tr>
               <th scope="col">Avatar</th>
@@ -38,10 +38,13 @@ const ManagerList = () => {
               <td>25</td>
               <td>24.05.1598</td>
               <td className={styles.btnBlock}>
-                <LoginButton className={styles.memberBtn} buttonText={"Edit"}>Edit</LoginButton>
-                <LoginButton className={styles.memberBtn} buttonText={"Delete"}>Delete</LoginButton>
+                <LoginButton className={styles.memberBtn} buttonText={"Edit"}>
+                  Edit
+                </LoginButton>
+                <LoginButton className={styles.memberBtn} buttonText={"Delete"}>
+                  Delete
+                </LoginButton>
               </td>
-              
             </tr>
             {/* {Members} */}
           </tbody>
