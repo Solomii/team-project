@@ -7,7 +7,9 @@ import Start from "./pages/Start";
 import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
+import EventList from "./pages/EventList/";
 import Layout from "./ui/Layout";
+import Event from "./pages/Event";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/memberList" element={<MemberList />} />
           <Route path="/managerList" element={<ManagerList />} />
-          <Route path="/eventList" element={<ManagerList />} />
-          <Route path="/event" element={<ManagerList />} />
+          <Route path="/eventList" element={<EventList />} />
+          <Route path="/event" element={<Event />} />
         </Route>
       </Routes>
     </div>

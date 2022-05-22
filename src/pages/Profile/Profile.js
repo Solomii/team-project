@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "../../assets/scss/profile.module.scss";
+
 import { ProfileButtonChangeAvatar } from '../../ui/button/ProfileButtons/ProfileButtonChangeAvatar/ProfileButtonChangeAvatar';
 import { ProfileButtonChangePassword } from '../../ui/button/ProfileButtons/ProfileButtonChangePassword/ProfileButtonChangePassword';
 
@@ -8,7 +9,7 @@ const Profile = () => {
     <div className={style.container}>
       <div className={style.boxavatartext}>
         <div className={style.avatar} >
-        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" />
+        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3" />
         <ProfileButtonChangeAvatar/>
       </div>
       <div className={style.text}>
