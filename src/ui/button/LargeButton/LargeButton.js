@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProfileButtonChangePassword = ({buttonText}) => {
+export const LargeButton  = ({ buttonText }) => {
   return (
     <div>
       <button type="submit"  class="btn btn-primary rounded-pill btn-lg fs-6">

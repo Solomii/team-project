@@ -3,7 +3,7 @@ import React from 'react';
 
 import style from "../../assets/scss/event.module.scss";
 
-import { ProfileButtonChangeAvatar } from "../../ui/button/ProfileButtons/ProfileButtonChangeAvatar/ProfileButtonChangeAvatar";
+import { SmallButton } from "../../ui/button/SmallButton/SmallButton";
 
 const Event = () => {
   return (
@@ -17,37 +17,37 @@ const Event = () => {
         </div>
          <div className={style.box__btn}>
         <div>
-          <ProfileButtonChangeAvatar buttonText={"Add Coment"} />
+          <SmallButton buttonText={"Add Coment"} />
         </div>
         <div>
-          <ProfileButtonChangeAvatar buttonText={"Add Addition comment"}/>
+          <SmallButton buttonText={"Add Addition comment"}/>
         </div>
       </div>
       </div>
-        <div>
-          <div className={style.box__participants}>
+        <div class="p-1">
+          <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <ProfileButtonChangeAvatar   buttonText={"Comment"} />
+            <SmallButton   buttonText={"Comment"} />
             </div> 
-          <div className={style.box__participants}>
+          <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <ProfileButtonChangeAvatar   buttonText={"Comment"} />
+            <SmallButton   buttonText={"Comment"} />
             </div> 
-          <div className={style.box__participants}>
+          <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <ProfileButtonChangeAvatar   buttonText={"Comment"} />
+            <SmallButton   buttonText={"Comment"} />
           </div> 
       </div>
     </div>

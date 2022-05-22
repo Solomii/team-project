@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProfileButtonChangeAvatar = ({buttonText}) => {
+export const SmallButton = ({buttonText}) => {
   return (
     <div>
       <button type="submit" class="btn btn-primary rounded-pill btn-sm font-size:smaller">
