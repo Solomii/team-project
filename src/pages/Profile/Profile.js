@@ -6,7 +6,7 @@ import { ProfileButtonChangePassword } from '../../ui/button/ProfileButtons/Prof
 const Profile = () => {
   return (
     <div className={style.container}>
-      <div className={style.boxavatartext}>
+      <div className={style.box__avatar__text}>
         <div className={style.avatar} >
         <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3" />
         <ProfileButtonChangeAvatar/>
@@ -18,7 +18,7 @@ const Profile = () => {
         <p>Place in the ranking</p>
       </div>
       </div>
-       <div className={style.btnchangepass}>
+       <div className={style.btn__change__pass}>
         <ProfileButtonChangePassword/>
       </div>
     </div>
