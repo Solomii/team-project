@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "../../assets/scss/profile.module.scss";
+
 import { LargeButton } from '../../ui/button/LargeButton/LargeButton';
 import { SmallButton } from '../../ui/button/SmallButton/SmallButton';
 

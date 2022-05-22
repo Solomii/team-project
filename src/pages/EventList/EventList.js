@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import AddEventForm from "../../ui/AddEventForm";
 
 const EventList = () => {
   return (
-    <div>EventListPage</div>
+    <>
+    <AddEventForm />
+    </>
   )
-}
+};
 
-export default EventList
+export default EventList;
