@@ -8,15 +8,14 @@ import Start from "./pages/Start";
 import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
-<<<<<<< HEAD
-import EventList from "./pages/EventList";
+
+import EventList from "./pages/EventList1";
 import EventManagement from "./pages/EventManagement";
-import Layout from "./ui/Layout";
+
 import Event from "./pages/Event";
-=======
-import EventList from "./pages/EventList/";
+
+
 import ManagerManagment from "./pages/ManagerManagment";
->>>>>>> e2875d2c8c6700fae2817709dd9b9d96a728c2aa
 
 function App() {
   return (
@@ -29,12 +28,12 @@ function App() {
           <Route path="/managerList" element={<ManagerList />} />
           <Route path="/managerManagment" element={<ManagerManagment />} />
           <Route path="/eventList" element={<EventList />} />
-<<<<<<< HEAD
+
           <Route path="/eventManagement" element={<EventManagement />} />
           
-=======
+
           <Route path="/event" element={<ManagerList />} />
->>>>>>> e2875d2c8c6700fae2817709dd9b9d96a728c2aa
+
         </Route>
       </Routes>
     </div>
