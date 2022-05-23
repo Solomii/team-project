@@ -7,7 +7,8 @@ import Start from "./pages/Start";
 import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
-import EventList from "./pages/EventList/";
+import EventList from "./pages/EventList1";
+import EventManagement from "./pages/EventManagement";
 import Layout from "./ui/Layout";
 import Event from "./pages/Event";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/memberList" element={<MemberList />} />
           <Route path="/managerList" element={<ManagerList />} />
           <Route path="/eventList" element={<EventList />} />
+          <Route path="/eventManagement" element={<EventManagement />} />
           <Route path="/event" element={<Event />} />
         </Route>
       </Routes>
