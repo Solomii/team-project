@@ -5,7 +5,6 @@
   align-items: center;
 }
 
-
 img {
   margin-bottom: 18px;
 }
@@ -25,6 +24,7 @@ p {
 
 .avatar {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-right: 130px;
   padding: 10px;
