@@ -3,13 +3,13 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { Route, Routes } from "react-router-dom";
 
+import Layout from "./ui/Layout"
 import Start from "./pages/Start";
 import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
 import EventList from "./pages/EventList/";
-import Layout from "./ui/Layout";
-import Event from "./pages/Event";
+import ManagerManagment from "./pages/ManagerManagment";
 
 function App() {
   return (
@@ -20,8 +20,9 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/memberList" element={<MemberList />} />
           <Route path="/managerList" element={<ManagerList />} />
+          <Route path="/managerManagment" element={<ManagerManagment />} />
           <Route path="/eventList" element={<EventList />} />
-          <Route path="/event" element={<Event />} />
+          <Route path="/event" element={<ManagerList />} />
         </Route>
       </Routes>
     </div>
