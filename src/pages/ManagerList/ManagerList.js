@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LoginButton } from "../../ui/button/LoginButton/LoginButton";
+import  LoginButton  from "../../ui/button/LoginButton";
 import styles from "../../assets/scss/memberlist.module.scss";
 
 const ManagerList = () => {

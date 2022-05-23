@@ -9,7 +9,7 @@ import Profile from "./pages/Profile";
 import MemberList from "./pages/MemberList";
 import ManagerList from "./pages/ManagerList";
 import EventList from "./pages/EventList/";
-import ManagerManagment from "./pages/ManagerManagment/ManagerManagment";
+import ManagerManagment from "./pages/ManagerManagment";
 
 function App() {
   return (

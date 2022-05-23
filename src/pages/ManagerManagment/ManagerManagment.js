@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "../../assets/scss/memberlist.module.scss";
-import { LoginButton } from "../../ui/button/LoginButton/LoginButton";
+import LoginButton from "../../ui/button/LoginButton";
 
 const ManagerManagment = () => {
   return (

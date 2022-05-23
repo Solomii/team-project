@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../../assets/scss/memberlist.module.scss";
 // import Members from "../../features/Members";
-import { LoginButton } from "../../ui/button/LoginButton/LoginButton";
+import LoginButton from "../../ui/button/LoginButton";
 
 const MemberList = () => {
   return (
