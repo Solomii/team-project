@@ -1,5 +1,8 @@
 import React from "react";
+
 import style from '../../assets/scss/eventList.module.scss';
+
+import AddEventForm from "../../features/AddEventForm";
 
 const EventList = () => {
   return (

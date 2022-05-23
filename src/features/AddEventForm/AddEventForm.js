@@ -1,8 +1,8 @@
 import React from "react";
 import style from "../../assets/scss/AddEventForm.module.scss";
-import CloseButton from "../button/CloseButton";
-import LoginButton from "../button/LoginButton";
-import Input from "../input/Input/Input";
+import CloseButton from "../../ui/button/CloseButton";
+import LoginButton from "../../ui/button/LoginButton";
+import Input from "../../ui/input/Input/Input";
 
 const AddEventForm = () => {
   console.log(style.container);
