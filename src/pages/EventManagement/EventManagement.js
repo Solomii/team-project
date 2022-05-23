@@ -1,4 +1,6 @@
 import React from "react";
+
+import AddEventForm from "../../ui/AddEventForm";
 import style from '../../assets/scss/eventManagement.module.scss';
 
 const EventList = () => {
@@ -12,6 +14,10 @@ const EventList = () => {
         </div>
         <div className={style.button__wrapper}>
           <button type="button" className="btn btn-primary w-auto">Add Event</button>
+          
+        </div>
+        <div>
+          <AddEventForm />
         </div>        
         <div className="card-body px-5">
           <table className="table table-bordered table-responsive-lg table-hover" >
