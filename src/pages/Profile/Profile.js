@@ -1,16 +1,16 @@
 import React from 'react';
 import style from "../../assets/scss/profile.module.scss";
 
-import { ProfileButtonChangeAvatar } from '../../ui/button/ProfileButtons/ProfileButtonChangeAvatar/ProfileButtonChangeAvatar';
-import { ProfileButtonChangePassword } from '../../ui/button/ProfileButtons/ProfileButtonChangePassword/ProfileButtonChangePassword';
+import { LargeButton } from '../../ui/button/LargeButton/LargeButton';
+import { SmallButton } from '../../ui/button/SmallButton/SmallButton';
 
 const Profile = () => {
   return (
     <div className={style.container}>
       <div className={style.box__avatar__text}>
         <div className={style.avatar} >
-        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3" />
-        <ProfileButtonChangeAvatar/>
+        <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3"/>
+          <SmallButton buttonText={"Change avatar"}/>
       </div>
       <div className={style.text}>
         <p>First Name</p>
@@ -20,7 +20,7 @@ const Profile = () => {
       </div>
       </div>
        <div className={style.btn__change__pass}>
-        <ProfileButtonChangePassword/>
+        <LargeButton buttonText={"Change password"}/>
       </div>
     </div>
   )

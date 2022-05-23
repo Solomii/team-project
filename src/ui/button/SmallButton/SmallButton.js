@@ -1,11 +1,11 @@
 import React from "react";
 
-export const ProfileButtonChangeAvatar = () => {
+export const SmallButton = ({buttonText}) => {
   return (
-    <>
+    <div>
       <button type="submit" class="btn btn-primary rounded-pill btn-sm font-size:smaller">
-       Change avatar
+       {buttonText}
       </button>
-    </>
+    </div>
   );
 }
