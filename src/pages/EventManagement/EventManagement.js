@@ -1,8 +1,7 @@
 import React from "react";
 
-import style from '../../assets/scss/eventList.module.scss';
-
-import AddEventForm from "../../features/AddEventForm";
+import AddEventForm from "../../ui/AddEventForm";
+import style from '../../assets/scss/eventManagement.module.scss';
 
 const EventList = () => {
   return (
@@ -10,9 +9,16 @@ const EventList = () => {
       <div className="card shadow mb-4 ">
         <div className="card-header py-3">
           <h6 className="m-0 font-weight-bold text-primary fs-5 text">
-            The List of Visited Events 
+            The Events Management 
           </h6>
         </div>
+        <div className={style.button__wrapper}>
+          <button type="button" className="btn btn-primary w-auto">Add Event</button>
+          
+        </div>
+        <div>
+          <AddEventForm />
+        </div>        
         <div className="card-body px-5">
           <table className="table table-bordered table-responsive-lg table-hover" >
             <thead className="table-light">
