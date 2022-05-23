@@ -1,17 +1,14 @@
 import React from "react";
 
 import styles from "../../assets/scss/memberlist.module.scss";
-import LoginButton from "../../ui/button/LoginButton";
 
 const ManagerManagment = () => {
   return (
     <div className={`${styles.tableContainer}`}>
       <div className="card shadow mb-4">
-        <div className={styles.flexBlock}>
-          <h2 style={{ fontSize: "18px" }}>Managers List</h2>
-          <div style={{ width: "200px" }}>
-            <LoginButton buttonText={"Add Manager"} />
-          </div>
+        <div className={`card-header py-3 ${styles.flexBlock}`}>
+          <h2 className="m-0 font-weight-bold text-primary fs-5 text">Managers List</h2>
+          <button style={{fontSize: "18px"}} type="button" className="btn btn-primary w-auto">Add Manager</button>
         </div>
         <div className="card-body px-5">
           <table className={`table table-bordered shadow-sm`}>
@@ -30,17 +27,10 @@ const ManagerManagment = () => {
                 <td>Gustavus</td>
                 <td>Adolphus</td>
                 <td>@gmail</td>
-                <td className={styles.btnBlock}>
-                  <LoginButton className={styles.memberBtn} buttonText={"Edit"}>
-                    Edit
-                  </LoginButton>
-                  <LoginButton
-                    className={styles.memberBtn}
-                    buttonText={"Delete"}
-                  >
-                    Delete
-                  </LoginButton>
-                </td>
+                <div className={styles.btnBlock}>
+                  <button type="button" className="btn btn-primary w-auto">Edit</button>
+                  <button type="button" className="btn btn-danger w-auto">Delete</button>
+                </div>
               </tr>
               {/* {Managers} */}
             </tbody>
