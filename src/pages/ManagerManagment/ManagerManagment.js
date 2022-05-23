@@ -1,42 +1,34 @@
 import React from "react";
 
-import  LoginButton  from "../../ui/button/LoginButton";
 import styles from "../../assets/scss/memberlist.module.scss";
+import LoginButton from "../../ui/button/LoginButton";
 
-const ManagerList = () => {
+const ManagerManagment = () => {
   return (
     <div>
       <div className={`${styles.tableContainer}`}>
         <div className={styles.flexBlock}>
-          <h2 style={{ fontSize: "18px" }}>Members List</h2>
+          <h2 style={{ fontSize: "18px" }}>Managers List</h2>
           <div style={{ width: "200px" }}>
-            <LoginButton btnClass="btn-danger" buttonText={"Add User"} />
+            <LoginButton buttonText={"Add Manager"} />
           </div>
         </div>
         <table className={`table table-bordered shadow`}>
-          <thead className={`table-light`}>
+          <thead className={`table-light ${styles.tableHead}`}>
             <tr>
               <th scope="col">Avatar</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
-              <th scope="col">Organisation</th>
               <th scope="col">Email</th>
-              <th scope="col">Phone</th>
-              <th scope="col">Score</th>
-              <th scope="col">Birth Date</th>
-              <th scope="col">Managing</th>
+              <th scope="col">Managment</th>
             </tr>
           </thead>
           <tbody>
             <tr className={styles.tableRow}>
-              <th scope="row">1</th>
+              <th>Avatar</th>
               <td>Gustavus</td>
               <td>Adolphus</td>
-              <td>Army</td>
               <td>@gmail</td>
-              <td>+3806712494</td>
-              <td>25</td>
-              <td>24.05.1598</td>
               <td className={styles.btnBlock}>
                 <LoginButton className={styles.memberBtn} buttonText={"Edit"}>
                   Edit
@@ -46,7 +38,7 @@ const ManagerList = () => {
                 </LoginButton>
               </td>
             </tr>
-            {/* {Members} */}
+            {/* {Managers} */}
           </tbody>
         </table>
       </div>
@@ -54,4 +46,4 @@ const ManagerList = () => {
   );
 };
 
-export default ManagerList;
+export default ManagerManagment;
