@@ -1,5 +1,5 @@
 import React from "react";
-import AddEventForm from "../../ui/AddEventForm";
+import AddEventForm from "../../features/AddEventForm";
 
 const EventList = () => {
   return (

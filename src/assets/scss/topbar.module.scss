@@ -11,14 +11,16 @@ $white: #fff !default;
   text-align: left;
   color: $secondary;
   background-color: $white;
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
 }
 
 .authHeader {
   height: auto;
 }
 
-.authHeader:hover, .dropdownItem:hover, .signIn {
+.authHeader:hover,
+.dropdownItem:hover,
+.signIn {
   cursor: pointer;
 }
 
@@ -41,13 +43,13 @@ $white: #fff !default;
   background-clip: padding-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
 }
 
 .dropdownItem {
   width: 100%;
   height: 40px;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   font-weight: 400;
   color: #3a3b45;
 }
