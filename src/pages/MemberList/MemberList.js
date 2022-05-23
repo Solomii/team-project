@@ -2,7 +2,6 @@ import React from "react";
 
 import styles from "../../assets/scss/memberlist.module.scss";
 // import Members from "../../features/Members";
-import LoginButton from "../../ui/button/LoginButton";
 
 const MemberList = () => {
   return (
@@ -10,7 +9,6 @@ const MemberList = () => {
       <div className={styles.flexBlock}>
         <h2 style={{ fontSize: "18px" }}>Members List</h2>
         <div style={{ width: "200px" }}>
-          <LoginButton buttonText={"Add User"} />
         </div>
       </div>
       <table className={`table table-bordered shadow`}>
