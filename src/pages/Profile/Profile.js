@@ -9,8 +9,10 @@ const Profile = () => {
     <div className={style.container}>
       <div className={style.box__avatar__text}>
         <div className={style.avatar} >
+
         <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3"/>
           <SmallButton buttonText={"Change avatar"}/>
+
       </div>
       <div className={style.text}>
         <p>First Name</p>
@@ -20,7 +22,9 @@ const Profile = () => {
       </div>
       </div>
        <div className={style.btn__change__pass}>
+
         <LargeButton buttonText={"Change password"}/>
+
       </div>
     </div>
   )
