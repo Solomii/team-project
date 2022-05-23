@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../../assets/scss/loginbutton.module.scss";
 
-export const LoginButton = ({ buttonText }) => {
+ const LoginButton = ({ buttonText }) => {
   return (
     <div>
       <button type="button" className={`btn rounded-pill btn-primary ${styles.loginButton}`}>
@@ -10,3 +10,4 @@ export const LoginButton = ({ buttonText }) => {
     </div>
   );
 }
+export default LoginButton;
