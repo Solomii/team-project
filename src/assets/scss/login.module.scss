@@ -1,70 +1,69 @@
 body {
-	background: linear-gradient(180deg,#4e73df 10%,#224abe 100%);;
+  background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
 }
 
-.container{
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	
+.container {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
 .plate {
-	width: 950px;
-	height: 550px;
-	margin: 3% auto;
-	display: flex;
-	flex-direction: row;
-	border-radius: 15px;
-	overflow: hidden;
-	background-color: white;
-	@media (max-width: 990px) { 
-		width: 400px;
-	}
+  width: 950px;
+  height: 550px;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  @media (max-width: 990px) {
+    width: 400px;
+  }
 }
 
-.img{
-	width: 50%; 
-	background-image: url('./../../assets/images/dog.jpeg');
-	background-position: 0 -100px;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	@media (max-width: 990px) { 
-		display: none;
-	 }
+.img {
+  width: 50%;
+  background-image: url('./../../assets/images/dog.jpeg');
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  @media (max-width: 990px) {
+    display: none;
+  }
 }
 
 .form {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	margin-top: auto;
-	margin-bottom: auto;
-	@media (max-width: 990px) { 
-		width: 100%;
-	}
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  @media (max-width: 990px) {
+    width: 100%;
+  }
 }
 
 .border {
-width: 70%;
-height: 50%;
-display: flex;
-text-align: center;
-flex-direction: column;
-justify-content: center;
-margin: 0 auto;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .title {
-font-family: 'Nunito', sans-serif;
-font-weight: 300;
-margin-bottom: 30px;
-font-size: 23px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 23px;
 }
 
 .element {
-	margin-bottom:  15px;
+  margin-bottom: 15px;
 }
-.element:last-child{
-	margin-top: 10px;
+.element:last-child {
+  margin-top: 10px;
 }

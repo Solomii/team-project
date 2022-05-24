@@ -5,7 +5,7 @@
   margin-top: 35px;
   padding: 0px 50px;
 
- @media (max-width: 900px) {
+  @media (max-width: 900px) {
     padding: 0px 10px;
   }
 }
@@ -24,7 +24,6 @@ p {
   margin-bottom: 20px;
 }
 
-
 .box__list {
   display: flex;
   margin-left: 50px;
@@ -39,38 +38,38 @@ p {
     line-height: 15px;
     margin-top: 3px;
 
-  @media (max-width: 834px) {
-    margin-right: 30px;
-  }
+    @media (max-width: 834px) {
+      margin-right: 30px;
+    }
 
-  @media (max-width: 648px) {
-    margin-right: 20px;
-    font-size: 8px;
-  }
+    @media (max-width: 648px) {
+      margin-right: 20px;
+      font-size: 8px;
+    }
 
-  @media (max-width: 543px) {
+    @media (max-width: 543px) {
       margin-right: 10px;
       font-size: 6px;
     }
 
-  @media (max-width: 348px) {
-    margin-right: 5px;
-    font-size: 5px;
-   }
- }
+    @media (max-width: 348px) {
+      margin-right: 5px;
+      font-size: 5px;
+    }
+  }
 
   .div__img {
     margin: 0px 20px;
     padding-top: 3px;
 
-   @media (max-width: 501px) {
-    margin: 0px 10px;
-  }
+    @media (max-width: 501px) {
+      margin: 0px 10px;
+    }
 
-   @media (max-width: 349px) {
-    margin: 0px 5px;
+    @media (max-width: 349px) {
+      margin: 0px 5px;
+    }
   }
- }
 }
 
 .box__btn {
@@ -80,10 +79,9 @@ p {
   div {
     margin-right: 25px;
 
-    @media (max-width:1100px) {
+    @media (max-width: 1100px) {
       margin-right: 5px;
       margin-bottom: 25px;
     }
   }
 }
-

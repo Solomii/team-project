@@ -1,0 +1,17 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    
+    @media only screen and (max-width: 992px) {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: end;
+    margin: 20px 40px 0 0;
+    
+}

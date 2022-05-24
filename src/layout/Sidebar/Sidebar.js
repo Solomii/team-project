@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className={sidebarClasses}>
+      <nav className={sidebarClasses}>
         <div className={styles.roleBlock}>
           {isSidebarBig && (
             <SmileSvg />
@@ -44,7 +44,7 @@ const Sidebar = () => {
         <div className={sidebarArrowClasses}>
           <ArrowSvg onClick={() => setIsSidebarBig(!isSidebarBig)} />
         </div>
-      </div>
+      </nav>
     </>
   );
 };
