@@ -32,10 +32,10 @@ const Sidebar = () => {
         <hr className={styles.horizonLine} />
         <ul style={{ paddingLeft: "0px" }}>
           {SidebarData.map((el, key) => (
-            <Link key={key} className={styles.Link} to={el.link}>
+            <Link key={key} className={`text-white ${styles.Link}`} to={el.link}>
               <li className={sidebarLiClasses}>
                 <div className={sidebarIconLiClasses}>{el.icon}</div>
-                <div>{el.title}</div>
+                {isSidebarBig && <div>{el.title}</div>}
               </li>
             </Link>
           ))}
