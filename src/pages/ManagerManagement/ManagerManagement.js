@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../../assets/scss/memberlist.module.scss";
 import Button from "../../ui/button/Button";
 
-const ManagerManagment = () => {
+const ManagerManagement = () => {
   return (
     <div className={`${styles.tableContainer}`}>
       <div className="card shadow mb-4">
@@ -42,4 +42,4 @@ const ManagerManagment = () => {
   );
 };
 
-export default ManagerManagment;
+export default ManagerManagement;

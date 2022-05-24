@@ -30,8 +30,8 @@ export const SidebarData = [
     ),
   },
   {
-    title: "Member management",
-    link: "./manager-list",
+    title: "Member Management",
+    link: "./member-management",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ export const SidebarData = [
     ),
   },
   {
-    title: "Manager Managment",
-    link: "./manager-managment",
+    title: "Manager Management",
+    link: "./manager-management",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
