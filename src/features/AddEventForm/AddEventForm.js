@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+
 import style from "../../assets/scss/AddEventForm.module.scss";
+
+import Button from "../../ui/button/Button";
 import CloseButton from "../../ui/button/CloseButton";
-import LoginButton from "../../ui/button/LoginButton";
 import Input from "../../ui/input/Input/Input";
 
-const AddEventForm = () => {
+const AddEventForm = ({closeForm}) => {
+  
   return (
     <div className={style.container}>
       <div className={style.plate}>
-		  <CloseButton />
+		  <CloseButton onClick={closeForm}/>
 		  
         <div className={style.borders}>
           <h1 className={style.title}>Add Event Form</h1>
@@ -26,7 +29,7 @@ const AddEventForm = () => {
           </div>
 
           <div className={style.element}>
-            <LoginButton buttonText={"Add event"} />
+            <Button label={'Add event'} className={'btn-primary btn-block'} style={{height: '50px'}}/>
           </div>
         </div>
       </div>
