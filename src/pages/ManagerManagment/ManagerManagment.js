@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "../../assets/scss/memberlist.module.scss";
+import Button from "../../ui/button/Button";
 
 const ManagerManagment = () => {
   return (
@@ -28,8 +29,8 @@ const ManagerManagment = () => {
                 <td>Adolphus</td>
                 <td>@gmail</td>
                 <div className={styles.btnBlock}>
-                  <button type="button" className="btn btn-primary w-auto">Edit</button>
-                  <button type="button" className="btn btn-danger w-auto">Delete</button>
+                  <Button label={'Edit'} className={'btn-primary w-auto me-md-2'} />
+                  <Button label={'Delete'} className={'btn-danger w-auto '}/>
                 </div>
               </tr>
               {/* {Managers} */}
