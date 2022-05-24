@@ -1,7 +1,7 @@
 import React from "react";
 import mail from "../../../assets/scss/email.module.scss";
 
-export const InputEmail = () => {
+const InputEmail = () => {
   return (
     <input
       type="email"
@@ -12,3 +12,5 @@ export const InputEmail = () => {
     />
   );
 }
+
+export default InputEmail;

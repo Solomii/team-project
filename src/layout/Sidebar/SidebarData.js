@@ -16,7 +16,7 @@ export const SidebarData = [
   },
   {
     title: "Member List",
-    link: "/memberList",
+    link: "/member-list",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export const SidebarData = [
   },
   {
     title: "Member management",
-    link: "./managerList",
+    link: "./manager-list",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export const SidebarData = [
   },
   {
     title: "Manager Managment",
-    link: "./managerManagment",
+    link: "./manager-managment",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export const SidebarData = [
   },
   {
     title: "Event List",
-    link: "./eventList",
+    link: "./event-list",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export const SidebarData = [
   },
   {
     title: "Event Management",
-    link: "./eventManagement",
+    link: "./event-management",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
