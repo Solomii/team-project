@@ -7,9 +7,7 @@ import CloseButton from "../../ui/button/CloseButton";
 import Input from "../../ui/input/Input/Input";
 
 const AddEventForm = ({closeForm}) => {
-  // const [show, setShow] = useState(true);
   
-
   return (
     <div className={style.container}>
       <div className={style.plate}>
