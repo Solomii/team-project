@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "../../assets/scss/memberlist.module.scss";
+import styles from "../../assets/scss/membermanagement.module.scss";
 
-const ManagerList = () => {
+const MemberManagement = () => {
   return (
       <div className={`${styles.tableContainer}`}>
         <div className="card shadow mb-4">
@@ -49,4 +49,4 @@ const ManagerList = () => {
   );
 };
 
-export default ManagerList;
+export default MemberManagement;
