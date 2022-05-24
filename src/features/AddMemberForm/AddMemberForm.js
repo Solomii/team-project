@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import style from "../../assets/scss/AddMemberForm.module.scss";
 
@@ -10,29 +10,41 @@ const AddMemberForm = ({closeForm}) => {
   
   return (
     <div className={style.container}>
-      <div className={style.plate}>
-		  <CloseButton onClick={closeForm}/>
+      <form className={style.plate}>
+		    <CloseButton onClick={closeForm}/>
 		  
         <div className={style.borders}>
           <h1 className={style.title}>Add Member Form</h1>
 
           <div className={style.element}>
-            <Input type={"text"} placeholder={"Event name"} />
+            <Input type={"text"} placeholder={"First name"} />
           </div>
-
           <div className={style.element}>
-            <Input type={"date"} />
+            <Input type={"text"} placeholder={"Last name"} />
           </div>
-
           <div className={style.element}>
-            <Input type={"number"} placeholder={"Score (max. 10)"} min={"1"} max={"10"} />
+            <Input type={"email"} placeholder={"Email"} />
           </div>
-
           <div className={style.element}>
-            <Button label={'Add event'} className={'btn-primary btn-block'} style={{height: '50px'}}/>
+            <Input type={"password"} placeholder={"Password"} />
+          </div>
+          <div className={style.element}>
+            <Input type={"date"} placeholder={"birth date"} />
+          </div>
+          <div className={style.element}>
+            <Input type={"tel"} placeholder={"Phone number"} />
+          </div>
+          <div className={style.element}>
+            <Input type={"text"} placeholder={"Organisation"} />
+          </div>
+          <div className={style.element}>
+            <Input type={"number"} placeholder={"Initial score"} />
+          </div>
+          <div className={style.element}>
+            <Button label={'Add event'} className={'btn-primary btn-block'} style={{height: '40px'}}/>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

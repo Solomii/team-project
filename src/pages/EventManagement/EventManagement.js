@@ -16,7 +16,7 @@ const [show, setShow] = useState(false);
           </h6>
         </div>
         <div className={style.button__wrapper}>
-          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => show == setShow(!show)}/>
+          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => setShow(!show)}/>
         </div>
         <div>
           { show ? <AddEventForm closeForm={() => setShow(false)}/> : null}

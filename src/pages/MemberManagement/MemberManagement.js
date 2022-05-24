@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import AddMemberForm from "../../features/AddMemberForm";
 
 import styles from "../../assets/scss/membermanagement.module.scss";
 
 const MemberManagement = () => {
+  const [show, setShow] = useState(false);
+
   return (
       <div className={`${styles.tableContainer}`}>
         <div className="card shadow mb-4">
           <div className={`card-header py-3 ${styles.flexBlock}`}>
             <h2 className="m-0 font-weight-bold text-primary fs-5 text">Members List</h2>
-            <button style={{fontSize: "18px"}} type="button" className="btn btn-primary w-auto">Add Member</button>
+            <button style={{fontSize: "18px"}} type="button" className="btn btn-primary w-auto" onClick={() => setShow(!show)}>
+              Add Member
+            </button>
           </div>
+          <div>
+            { show ? <AddMemberForm closeForm={() => setShow(false)}/> : null}
+          </div> 
           <div className="card-body px-5">
             <table className={`table table-bordered shadow-sm`}>
               <thead className={`table-light`}>
