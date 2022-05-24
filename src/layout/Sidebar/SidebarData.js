@@ -31,7 +31,7 @@ export const SidebarData = [
   },
   {
     title: "Member management",
-    link: "./managerList",
+    link: "/managerList",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export const SidebarData = [
   },
   {
     title: "Manager Managment",
-    link: "./managerManagment",
+    link: "/managerManagment",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export const SidebarData = [
   },
   {
     title: "Event List",
-    link: "./eventList",
+    link: "/eventList",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
