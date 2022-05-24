@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../../assets/scss/AddEventForm.module.scss";
+import Button from "../../ui/button/Button";
 import CloseButton from "../../ui/button/CloseButton";
-import LoginButton from "../../ui/button/LoginButton";
 import Input from "../../ui/input/Input/Input";
 
 const AddEventForm = () => {
@@ -28,7 +28,7 @@ const AddEventForm = () => {
           </div>
 
           <div className={style.element}>
-            <LoginButton buttonText={"Add event"} />
+            <Button label={'Add event'} className={'btn-primary btn-block'} style={{height: '50px'}}/>
           </div>
         </div>
       </div>

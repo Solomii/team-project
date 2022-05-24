@@ -12,6 +12,7 @@ import EventList from "./pages/EventList";
 import EventManagement from "./pages/EventManagement";
 import Event from "./pages/Event";
 import ManagerManagment from "./pages/ManagerManagment";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,13 +21,14 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Start />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/memberList" element={<MemberList />} />
-          <Route path="/managerList" element={<ManagerList />} />
-          <Route path="/managerManagment" element={<ManagerManagment />} />
-          <Route path="/eventList" element={<EventList />} />
-          <Route path="/eventManagement" element={<EventManagement />} />
+          <Route path="/member-list" element={<MemberList />} />
+          <Route path="/manager-list" element={<ManagerList />} />
+          <Route path="/manager-managment" element={<ManagerManagment />} />
+          <Route exact path="/event-list" element={<EventList />} />
+          <Route exact path="/event-management" element={<EventManagement />} />
           <Route path="/event" element={<Event />} />
         </Route>
+        <Route path="/auth" element={<Login />} />
       </Routes>
     </div>
   );

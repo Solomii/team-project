@@ -1,7 +1,8 @@
 import React from "react";
 
-import AddEventForm from "../../ui/AddEventForm";
+import AddEventForm from "../../features/AddEventForm";
 import style from '../../assets/scss/eventManagement.module.scss';
+import Button from "../../ui/button/Button";
 
 const EventList = () => {
   return (
@@ -13,7 +14,7 @@ const EventList = () => {
           </h6>
         </div>
         <div className={style.button__wrapper}>
-          <button type="button" className="btn btn-primary w-auto">Add Event</button>
+          <Button label={'Add event'} className={'btn-primary btn-sm'}/>
           
         </div>
         <div>

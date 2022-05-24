@@ -1,7 +1,7 @@
 import React from "react";
 import pass from "../../../assets/scss/email.module.scss";
 
-export const InputPassword = () => {
+const InputPassword = () => {
   return (
     <input
       type="password"
@@ -11,3 +11,4 @@ export const InputPassword = () => {
     />
   );
 }
+export default InputPassword;
