@@ -1,11 +1,12 @@
 import React from "react";
-import { InputEmail } from "../../ui/input/InputEmail";
-import { InputPassword } from "../../ui/input/InputPassword";
-import { LoginButton } from "../../ui/button/LoginButton";
+import InputEmail from "../../ui/input/InputEmail";
+import InputPassword from "../../ui/input/InputPassword";
+import LoginButton  from "../../ui/button/LoginButton";
 
 import style from "../../assets/scss/login.module.scss";
+import Button from "../../ui/button/Button";
 
-export const Login = () => {
+ const Login = () => {
   
   return (
     <div className={style.container}>
@@ -24,7 +25,7 @@ export const Login = () => {
             </div>
 
             <div className={style.element}>
-              <LoginButton />
+            <Button label={'Login'} className={'btn-sm btn-primary btn-block'} style={{height: '50px'}}/>
             </div>
           </div>
         </div>
@@ -32,3 +33,5 @@ export const Login = () => {
     </div>
   );
 }
+
+export default Login;

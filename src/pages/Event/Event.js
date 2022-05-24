@@ -2,8 +2,8 @@
 import React from 'react';
 
 import style from "../../assets/scss/event.module.scss";
+import Button from '../../ui/button/Button';
 
-import { SmallButton } from "../../ui/button/SmallButton/SmallButton";
 
 const Event = () => {
   return (
@@ -17,38 +17,42 @@ const Event = () => {
         </div>
          <div className={style.box__btn}>
         <div>
-          <SmallButton buttonText={"Add Coment"} />
+          <Button label={'Add Comment'} className={'btn-primary btn-sm'}/>
         </div>
         <div>
-          <SmallButton buttonText={"Add Addition comment"}/>
+        <Button label={'Add Addition Comment'} className={'btn-primary btn-sm'}/>
         </div>
       </div>
       </div>
         <div class="p-1">
+
           <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <SmallButton   buttonText={"Comment"} />
+            <Button label={'Comment'} className={'btn-primary btn-sm'}/>
             </div> 
+
           <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <SmallButton   buttonText={"Comment"} />
+            <Button label={'Comment'} className={'btn-primary btn-sm'}/>
             </div> 
+
           <div className={style.box__list}>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
             <div className={style.div__img}><img src={require("../../assets/images/eventAvatar.png")} alt="Profile Avatar" /></div>
             <p>First Name</p>
             <p>Last Name</p>
             <p>Score</p>
-            <SmallButton   buttonText={"Comment"} />
+            <Button label={'Comment'} className={'btn-primary btn-sm'}/>
           </div> 
+
       </div>
     </div>
   )

@@ -1,8 +1,7 @@
 import React from 'react';
 import style from "../../assets/scss/profile.module.scss";
+import Button from '../../ui/button/Button';
 
-import { LargeButton } from '../../ui/button/LargeButton/LargeButton';
-import { SmallButton } from '../../ui/button/SmallButton/SmallButton';
 
 const Profile = () => {
   return (
@@ -10,7 +9,7 @@ const Profile = () => {
       <div className={style.box__avatar__text}>
         <div className={style.avatar} >
         <img src={require("../../assets/images/profileAvatar.png")} alt="Profile Avatar" class="mb-3"/>
-          <SmallButton buttonText={"Change avatar"}/>
+          <Button label={'Change avatar'} className={'btn-primary btn-sm'} />
       </div>
       <div className={style.text}>
         <p>First Name</p>
@@ -20,7 +19,7 @@ const Profile = () => {
       </div>
       </div>
        <div className={style.btn__change__pass}>
-        <LargeButton buttonText={"Change password"}/>
+        <Button label={'Change password'} className={'btn-primary btn-sm'} />
       </div>
     </div>
   )
