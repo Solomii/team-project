@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddEventForm from "../../ui/AddEventForm";
+import AddEventForm from "../../features/AddEventForm";
 import style from '../../assets/scss/eventManagement.module.scss';
 
 const EventList = () => {

@@ -5,6 +5,8 @@ import LoginButton from "../../ui/button/LoginButton";
 import Input from "../../ui/input/Input/Input";
 
 const AddEventForm = () => {
+  console.log(style.container);
+
   return (
     <div className={style.container}>
       <div className={style.plate}>
