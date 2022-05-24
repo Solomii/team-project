@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 import AddEventForm from "../../features/AddEventForm";
 import style from '../../assets/scss/eventManagement.module.scss';
 import Button from "../../ui/button/Button";
 
 const EventList = () => {
+const [show, setShow] = useState(false);
+
   return (
     <div className={style.container} >
       <div className="card shadow mb-4 ">
@@ -14,11 +16,10 @@ const EventList = () => {
           </h6>
         </div>
         <div className={style.button__wrapper}>
-          <Button label={'Add event'} className={'btn-primary btn-sm'}/>
-          
+          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => show == setShow(!show)}/>
         </div>
         <div>
-          <AddEventForm />
+          { show ? <AddEventForm closeForm={() => setShow(false)}/> : null}
         </div>        
         <div className="card-body px-5">
           <table className="table table-bordered table-responsive-lg table-hover" >

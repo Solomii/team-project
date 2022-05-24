@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+
 import style from "../../assets/scss/AddEventForm.module.scss";
+
 import Button from "../../ui/button/Button";
 import CloseButton from "../../ui/button/CloseButton";
 import Input from "../../ui/input/Input/Input";
 
-const AddEventForm = () => {
-  console.log(style.container);
+const AddEventForm = ({closeForm}) => {
+  // const [show, setShow] = useState(true);
+  
 
   return (
     <div className={style.container}>
       <div className={style.plate}>
-		  <CloseButton />
+		  <CloseButton onClick={closeForm}/>
 		  
         <div className={style.borders}>
           <h1 className={style.title}>Add Event Form</h1>
