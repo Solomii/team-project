@@ -1,2 +1,2 @@
-import ManagerList from "./ManagerList";
+import ManagerList from './ManagerList'
 export default ManagerList

@@ -1,18 +1,18 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom'
 
-import Layout from "./ui/Layout"
-import Start from "./pages/Start";
-import Profile from "./pages/Profile";
-import MemberList from "./pages/MemberList";
-import ManagerList from "./pages/ManagerList";
-import EventList from "./pages/EventList";
-import EventManagement from "./pages/EventManagement";
-import Event from "./pages/Event";
-import ManagerManagment from "./pages/ManagerManagment";
-import Login from "./pages/Login";
+import Layout from './ui/Layout'
+import Start from './pages/Start'
+import Profile from './pages/Profile'
+import MemberList from './pages/MemberList'
+import ManagerList from './pages/ManagerList'
+import EventList from './pages/EventList'
+import EventManagement from './pages/EventManagement'
+import Event from './pages/Event'
+import ManagerManagment from './pages/ManagerManagment'
+import Login from './pages/Login'
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
         <Route path="/auth" element={<Login />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

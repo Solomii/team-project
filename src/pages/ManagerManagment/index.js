@@ -1,2 +1,2 @@
-import ManagerManagment from "./ManagerManagment";
-export default ManagerManagment;
+import ManagerManagment from './ManagerManagment'
+export default ManagerManagment
