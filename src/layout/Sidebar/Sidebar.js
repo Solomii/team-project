@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { SidebarData } from "./SidebarData";
 import styles from "../../assets/scss/sidebar.module.scss";
 import  { SmileSvg, ArrowSvg } from "../../assets/svg/svg-icons";
+import MenuContext from "../../context/MenuContext";
 
 const Sidebar = () => {
   const [isSidebarBig, setIsSidebarBig] = useState(true);
@@ -20,9 +21,11 @@ const Sidebar = () => {
     ? styles.iconLi
     : `${styles.iconLi} ${styles.iconLiActive}`;
 
+    const {isMenuCheked} = useContext(MenuContext)
+    const hideSideBarClass = isMenuCheked ? `${styles.menuToggle}` : null
   return (
     <>
-      <nav className={sidebarClasses}>
+      <nav className={`${sidebarClasses} ${hideSideBarClass}`}>
         <div className={styles.roleBlock}>
           {isSidebarBig && (
             <SmileSvg />
