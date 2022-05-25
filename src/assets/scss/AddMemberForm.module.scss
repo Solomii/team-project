@@ -1,9 +1,5 @@
 @import './variables.scss';
 
-.container {
-  overflow: hidden;
-}
-
 .plate {
   opacity: 100%;
   position: relative;
@@ -21,7 +17,6 @@
 .borders {
   width: 70%;
   height: 100%;
-
   display: flex;
   text-align: center;
   flex-direction: column;
