@@ -1,7 +1,6 @@
-import React from 'react'
-import InputEmail from '../../ui/input/InputEmail'
-import InputPassword from '../../ui/input/InputPassword'
-import LoginButton from '../../ui/button/LoginButton'
+import React from "react";
+import InputEmail from "../../ui/input/InputEmail";
+import InputPassword from "../../ui/input/InputPassword";
 
 import style from '../../assets/scss/login.module.scss'
 import Button from '../../ui/button/Button'

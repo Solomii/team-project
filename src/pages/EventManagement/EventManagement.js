@@ -14,7 +14,7 @@ const EventList = () => {
           <h6 className="m-0 font-weight-bold text-primary fs-5 text">The Events Management</h6>
         </div>
         <div className={style.button__wrapper}>
-          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => show == setShow(!show)} />
+          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => setShow(!show)}/>
         </div>
         <div>{show ? <AddEventForm closeForm={() => setShow(false)} /> : null}</div>
         <div className="card-body px-5">

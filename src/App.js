@@ -3,16 +3,16 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import { Route, Routes } from 'react-router-dom'
 
-import Layout from './ui/Layout'
-import Start from './pages/Start'
-import Profile from './pages/Profile'
-import MemberList from './pages/MemberList'
-import ManagerList from './pages/ManagerList'
-import EventList from './pages/EventList'
-import EventManagement from './pages/EventManagement'
-import Event from './pages/Event'
-import ManagerManagment from './pages/ManagerManagment'
-import Login from './pages/Login'
+import Layout from "./ui/Layout"
+import Start from "./pages/Start";
+import Profile from "./pages/Profile";
+import MemberList from "./pages/MemberList";
+import MemberManagement from "./pages/MemberManagement";
+import EventList from "./pages/EventList";
+import EventManagement from "./pages/EventManagement";
+import Event from "./pages/Event";
+import ManagerManagement from "./pages/ManagerManagement";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
           <Route index element={<Start />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/member-list" element={<MemberList />} />
-          <Route path="/manager-list" element={<ManagerList />} />
-          <Route path="/manager-managment" element={<ManagerManagment />} />
+          <Route path="/member-management" element={<MemberManagement />} />
+          <Route path="/manager-management" element={<ManagerManagement />} />
           <Route exact path="/event-list" element={<EventList />} />
           <Route exact path="/event-management" element={<EventManagement />} />
           <Route path="/event" element={<Event />} />
