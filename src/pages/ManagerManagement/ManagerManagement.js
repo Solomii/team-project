@@ -44,8 +44,4 @@ const ManagerManagement = () => {
   )
 }
 
-<<<<<<< HEAD:src/pages/ManagerManagment/ManagerManagment.js
-export default ManagerManagment
-=======
 export default ManagerManagement;
->>>>>>> main:src/pages/ManagerManagement/ManagerManagement.js
