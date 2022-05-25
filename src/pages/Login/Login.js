@@ -2,11 +2,10 @@ import React from "react";
 import InputEmail from "../../ui/input/InputEmail";
 import InputPassword from "../../ui/input/InputPassword";
 
-import style from "../../assets/scss/login.module.scss";
-import Button from "../../ui/button/Button";
+import style from '../../assets/scss/login.module.scss'
+import Button from '../../ui/button/Button'
 
- const Login = () => {
-  
+const Login = () => {
   return (
     <div className={style.container}>
       <div className={style.plate}>
@@ -24,13 +23,13 @@ import Button from "../../ui/button/Button";
             </div>
 
             <div className={style.element}>
-            <Button label={'Login'} className={'btn-sm btn-primary btn-block'} style={{height: '50px'}}/>
+              <Button label={'Login'} className={'btn-sm btn-primary btn-block'} style={{ height: '50px' }} />
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login

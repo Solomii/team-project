@@ -7,6 +7,21 @@
   background-color: #4e73df;
   color: #fff;
   font-size: 18px;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 20rem;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.35s;
+    overflow: auto;
+  }
 }
 .sidebarActive {
   display: flex;
@@ -75,4 +90,10 @@
 }
 .sidebarArrowActive {
   transform: rotate(180deg);
+}
+.menuToggle {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+  z-index: 30;
 }

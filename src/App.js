@@ -1,7 +1,7 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom'
 
 import Layout from "./ui/Layout"
 import Start from "./pages/Start";
@@ -31,7 +31,7 @@ function App() {
         <Route path="/auth" element={<Login />} />
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

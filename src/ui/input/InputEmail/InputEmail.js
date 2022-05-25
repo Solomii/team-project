@@ -1,5 +1,5 @@
-import React from "react";
-import mail from "../../../assets/scss/email.module.scss";
+import React from 'react'
+import mail from '../../../assets/scss/email.module.scss'
 
 const InputEmail = () => {
   return (
@@ -10,7 +10,7 @@ const InputEmail = () => {
       aria-describedby="emailHelp"
       placeholder="Enter Email Address..."
     />
-  );
+  )
 }
 
-export default InputEmail;
+export default InputEmail
