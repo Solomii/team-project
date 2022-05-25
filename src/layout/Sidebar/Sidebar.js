@@ -21,7 +21,7 @@ const Sidebar = () => {
     ? styles.iconLi
     : `${styles.iconLi} ${styles.iconLiActive}`;
 
-    const {isMenuCheked} = useContext(MenuContext)
+    const {isMenuCheked, setIsMenuChecked} = useContext(MenuContext)
     const hideSideBarClass = isMenuCheked ? `${styles.menuToggle}` : null
   return (
     <>
@@ -35,7 +35,7 @@ const Sidebar = () => {
         <hr className={styles.horizonLine} />
         <ul style={{ paddingLeft: "0px" }}>
           {SidebarData.map((el, key) => (
-            <Link key={key} className={`text-white ${styles.Link}`} to={el.link}>
+            <Link onClick={() => setIsMenuChecked(false)} key={key} className={`text-white ${styles.Link}`} to={el.link}>
               <li className={sidebarLiClasses}>
                 <div className={sidebarIconLiClasses}>{el.icon}</div>
                 {isSidebarBig && <div>{el.title}</div>}
