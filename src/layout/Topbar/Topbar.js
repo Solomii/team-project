@@ -39,13 +39,19 @@ function Topbar() {
   // const goToProfile = () => {
   //     navigate('/');
   // }
-    
-    const {isMenuCheked, setIsMenuChecked} = useContext(MenuContext)
-    const burgerClasses = isMenuCheked ? `${styles.menuBtn} ${styles.bgBurger}` : styles.menuBtn 
+
+  const { isMenuCheked, setIsMenuChecked } = useContext(MenuContext)
+  const burgerClasses = isMenuCheked ? `${styles.menuBtn} ${styles.bgBurger}` : styles.menuBtn
+  const menuToggleClasses = isMenuCheked ? `${styles.menuToggleActive} ${styles.menuToggle}` : styles.menuToggle
   return (
     <nav className={styles.navbar}>
       <div className={styles.headerBuger}>
-        <input id="menu-toggle" className={styles.menuToggle} onClick={() => setIsMenuChecked(!isMenuCheked)} type="checkbox" />
+        <input
+          id="menu-toggle"
+          className={menuToggleClasses}
+          onClick={() => setIsMenuChecked(!isMenuCheked)}
+          type="checkbox"
+        />
         <label className={burgerClasses} for="menu-toggle">
           <span></span>
         </label>
