@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Managers = ({managers}) => {
+const Managers = ({ managers }) => {
   return (
     <>
-        {/* {managers.map((member, id) => (
+      {/* {managers.map((member, id) => (
         <Member member={member} id={id}/>
       ))} */}
     </>

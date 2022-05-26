@@ -43,10 +43,10 @@ const MemberManagement = () => {
                   <td>+3806712494</td>
                   <td>25</td>
                   <td>24.05.1598</td>
-                  <div className={styles.btnBlock}>
+                  <td className={styles.btnBlock}>
                     <button type="button" className="btn btn-primary w-auto">Edit</button>
                     <button type="button" className="btn btn-danger w-auto">Delete</button>
-                  </div>
+                  </td>
                 </tr>
                 {/* {Members} */}
               </tbody>
@@ -54,7 +54,7 @@ const MemberManagement = () => {
           </div>
         </div>
       </div>
-  );
-};
+  )
+}
 
 export default MemberManagement;

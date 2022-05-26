@@ -1,2 +1,2 @@
-import ChangedPassword from "./ChangedPassword";
+import ChangedPassword from './ChangedPassword'
 export default ChangedPassword

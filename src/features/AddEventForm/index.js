@@ -1,2 +1,2 @@
-import AddEventForm from "./AddEventForm";
-export default AddEventForm;
+import AddEventForm from './AddEventForm'
+export default AddEventForm

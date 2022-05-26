@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 import style from "../../assets/scss/event.module.scss";
@@ -52,4 +53,4 @@ const Event = () => {
   )
 }
 
-export default Event;
+export default Event
