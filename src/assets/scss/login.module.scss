@@ -29,6 +29,7 @@ body {
   background-position: 0 -100px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+
   @media (max-width: 990px) {
     display: none;
   }
@@ -40,6 +41,7 @@ body {
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
+  
   @media (max-width: 990px) {
     width: 100%;
   }
@@ -65,6 +67,7 @@ body {
 .element {
   margin-bottom: 15px;
 }
+
 .element:last-child {
   margin-top: 10px;
 }

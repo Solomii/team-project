@@ -9,13 +9,11 @@ import Input from "../../ui/input/Input/Input";
 const AddMemberForm = ({closeForm}) => {
   
   return (
-    <div className={style.container}>
+    <div style={{overflow:"hidden"}}>
       <form className={style.plate}>
 		    <CloseButton onClick={closeForm}/>
-		  
         <div className={style.borders}>
           <h1 className={style.title}>Add Member Form</h1>
-
           <div className={style.element}>
             <Input type={"text"} placeholder={"First name"} />
           </div>
