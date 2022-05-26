@@ -1,18 +1,26 @@
 import React, {useState} from "react";
-import {useNavigate} from 'react-router-dom';
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
-import { auth } from "../../firebase-client";
-import { collection, doc, addDoc, setDoc } from "firebase/firestore";
+
+import { initializeApp } from "firebase/app";
+import {getAuth, createUserWithEmailAndPassword, signOut} from 'firebase/auth';
+import {collection, addDoc} from "firebase/firestore";
 import {db} from '../../firebase-client';
 
 import style from "../../assets/scss/AddMemberForm.module.scss";
 
 import CloseButton from "../../ui/button/CloseButton";
-import Input from "../../ui/input/Input/Input";
+import Input from "../../ui/input/Input";
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+};
 
 const AddMemberForm = ({closeForm}) => {
-  const navigate = useNavigate();
-
+   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -26,26 +34,30 @@ const AddMemberForm = ({closeForm}) => {
   const createMember = (e) => {
     e.preventDefault();
     setError('');
-        
-    createUserWithEmailAndPassword(auth, email, password)
-    .then(() => {
-      addDoc(collection(db, "members"), {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        phone: phone,
-        organisation: organisation,
-        birthDate: birthDate,
-        score: initialScore,
-        role: 'user'
-      });
-      navigate('../member-management');
-    })
-    .catch(err => {
-      setError(err.message);
-      console.error(error);
-    });
 
+    let secondaryApp = initializeApp(firebaseConfig, "secondary");
+    const secondaryAuth = getAuth(secondaryApp);
+        
+    createUserWithEmailAndPassword(secondaryAuth, email, password)
+      .then(signOut(secondaryAuth))
+      .then(() => {secondaryApp = null})
+      .then(() => {
+        addDoc(collection(db, "members"), {
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          phone: phone,
+          organisation: organisation,
+          birthDate: birthDate,
+          score: initialScore,
+          role: 'user'
+        });
+      })
+      .catch(err => {
+        setError(err.message);
+        console.error(error);
+      });
+    
     setFirstName('');
     setLastName('');
     setEmail('');
@@ -60,10 +72,8 @@ const AddMemberForm = ({closeForm}) => {
     <div className={style.container}>
       <form className={style.plate} onSubmit={createMember} name='createUser'>
 		    <CloseButton onClick={closeForm}/>
-		  
-        <div className={style.borders}>
+		    <div className={style.borders}>
           <h1 className={style.title}>Add Member Form</h1>
-
           <div className={style.element}>
             <Input 
               type={"text"} 
@@ -129,7 +139,13 @@ const AddMemberForm = ({closeForm}) => {
             />
           </div>
           <div className={style.element}>
-            <button type="submit" style={{fontSize: "16px"}} className="btn btn-primary rounded-pill w-auto">Add new Member</button>
+            <button 
+              type="submit" 
+              style={{fontSize: "16px"}} 
+              className="btn btn-primary rounded-pill w-auto"
+            >
+              Add new Member
+            </button>
           </div>
         </div>
       </form>
