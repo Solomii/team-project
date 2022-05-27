@@ -1,14 +1,13 @@
-.tableContainerManagement {
+.tableContainerManagers {
   max-width: 90%;
-  margin: auto;
-  padding-top: 40px;
+  margin: 0 auto;
+  padding: 40px;
 
   .flexBlock {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-
     .textResponsive {
       font-size: 17.5px;
       padding-left: 42px;
@@ -17,7 +16,6 @@
         font-size: 14px;
       }
     }
-
     .managementBtn {
       font-size: 17.5px;
       margin-right: 42px;
@@ -29,18 +27,13 @@
   }
 
   .btnBlock {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: space-around;
   }
 
   .tableRow {
     vertical-align: middle;
-    word-break: break-all;
-
-    @media (max-width: 755px) {
-      word-break: normal;
-    }
   }
 }

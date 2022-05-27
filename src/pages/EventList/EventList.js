@@ -8,10 +8,12 @@ const EventList = () => {
   return (
     <div className={style.container}>
       <div className="card shadow mb-4 ">
-        <div className="card-header py-3">
-          <h6 className="m-0 font-weight-bold text-primary fs-5 text">The List of Visited Events</h6>
+        <div className="card-header py-3 ">
+          <h2 className={`m-0 font-weight-bold text-primary  text ${style.textResponsive}`}>
+            The List of Visited Events
+          </h2>
         </div>
-        <div className="card-body px-5">
+        <div className="card-body px-5 overflow-scroll">
           <table className="table table-bordered table-responsive-lg table-hover">
             <thead className="table-light">
               <tr>
