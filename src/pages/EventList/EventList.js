@@ -13,7 +13,7 @@ const EventList = () => {
             The List of Visited Events
           </h2>
         </div>
-        <div className="card-body px-5 overflow-scroll">
+        <div className="card-body px-5  overflow-auto">
           <table className="table table-bordered table-responsive-lg table-hover">
             <thead className="table-light">
               <tr>
