@@ -5,7 +5,7 @@ import {getAuth, createUserWithEmailAndPassword, signOut} from 'firebase/auth';
 import {collection, addDoc} from "firebase/firestore";
 import {db} from '../../firebase-client';
 
-import style from "../../assets/scss/AddMemberForm.module.scss";
+import style from '../../assets/scss/AddMemberForm.module.scss'
 
 import CloseButton from "../../ui/button/CloseButton";
 import Input from "../../ui/input/Input";
@@ -69,88 +69,90 @@ const AddMemberForm = ({closeForm}) => {
   }
   
   return (
-    <div className={style.container}>
-      <form className={style.plate} onSubmit={createMember} name='createUser'>
-		    <CloseButton onClick={closeForm}/>
-		    <div className={style.borders}>
-          <h1 className={style.title}>Add Member Form</h1>
-          <div className={style.element}>
-            <Input 
-              type={"text"} 
-              placeholder={"First name"}
-              value={firstName}
-              onChange={e => setFirstName(e.target.value)} 
-            />
+    <div className={style.background}>
+      <div style={{ overflow: 'hidden' }}>
+        <form className={style.plate} onSubmit={createMember} name='createUser'>
+          <CloseButton onClick={closeForm}/>
+          <div className={style.borders}>
+            <h1 className={style.title}>Add Member Form</h1>
+            <div className={style.element}>
+              <Input 
+                type={"text"} 
+                placeholder={"First name"}
+                value={firstName}
+                onChange={e => setFirstName(e.target.value)} 
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"text"} 
+                placeholder={"Last name"}
+                value={lastName}
+                onChange={e => setLastName(e.target.value)}
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"email"} 
+                placeholder={"Email"} 
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"password"} 
+                placeholder={"Password"} 
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"date"} 
+                placeholder={"birth date"} 
+                value={birthDate}
+                onChange={e => setBirthDate(e.target.value)}  
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"tel"} 
+                placeholder={"Phone number"} 
+                value={phone}
+                onChange={e => setPhone(e.target.value)}  
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"text"} 
+                placeholder={"Organisation"} 
+                value={organisation}
+                onChange={e => setOrganisation(e.target.value)}  
+              />
+            </div>
+            <div className={style.element}>
+              <Input 
+                type={"number"} 
+                placeholder={"Initial score"} 
+                value={initialScore}
+                onChange={e => setInitialScore(e.target.value)}  
+              />
+            </div>
+            <div className={style.element}>
+              <button 
+                type="submit" 
+                style={{fontSize: "16px"}} 
+                className="btn btn-primary rounded-pill w-auto"
+              >
+                Add new Member
+              </button>
+            </div>
           </div>
-          <div className={style.element}>
-            <Input 
-              type={"text"} 
-              placeholder={"Last name"}
-              value={lastName}
-              onChange={e => setLastName(e.target.value)}
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"email"} 
-              placeholder={"Email"} 
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"password"} 
-              placeholder={"Password"} 
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"date"} 
-              placeholder={"birth date"} 
-              value={birthDate}
-              onChange={e => setBirthDate(e.target.value)}  
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"tel"} 
-              placeholder={"Phone number"} 
-              value={phone}
-              onChange={e => setPhone(e.target.value)}  
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"text"} 
-              placeholder={"Organisation"} 
-              value={organisation}
-              onChange={e => setOrganisation(e.target.value)}  
-            />
-          </div>
-          <div className={style.element}>
-            <Input 
-              type={"number"} 
-              placeholder={"Initial score"} 
-              value={initialScore}
-              onChange={e => setInitialScore(e.target.value)}  
-            />
-          </div>
-          <div className={style.element}>
-            <button 
-              type="submit" 
-              style={{fontSize: "16px"}} 
-              className="btn btn-primary rounded-pill w-auto"
-            >
-              Add new Member
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default AddMemberForm;
+export default AddMemberForm

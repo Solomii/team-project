@@ -1,5 +1,7 @@
+@import '../../assets/Scss/variables.scss';
 body {
-  background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  // background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background: $light;
   overflow: hidden;
 }
 
@@ -29,6 +31,7 @@ body {
   background-position: 0 -100px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+
   @media (max-width: 990px) {
     display: none;
   }
@@ -40,6 +43,7 @@ body {
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
+
   @media (max-width: 990px) {
     width: 100%;
   }
@@ -65,6 +69,7 @@ body {
 .element {
   margin-bottom: 15px;
 }
+
 .element:last-child {
   margin-top: 10px;
 }

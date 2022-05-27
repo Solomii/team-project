@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import styles from "../../assets/scss/memberlist.module.scss";
+import styles from '../../assets/scss/memberlist.module.scss'
 // import Members from "../../features/Members";
 
 const MemberList = () => {
@@ -9,9 +9,9 @@ const MemberList = () => {
       <div className="card shadow mb-4">
         <div className={`card-header py-3 ${styles.flexBlock}`}>
           <h2 className="m-0 font-weight-bold text-primary fs-5 text">Members List</h2>
-          <div style={{ width: "200px" }}></div>
+          <div style={{ width: '200px' }}></div>
         </div>
-        <div className="card-body px-5">
+        <div className="card-body px-5 overflow-auto">
           <table className={`table table-bordered shadow-sm`}>
             <thead className={`table-light ${styles.tableHead}`}>
               <tr>
@@ -36,7 +36,7 @@ const MemberList = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MemberList;
+export default MemberList
