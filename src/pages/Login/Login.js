@@ -5,7 +5,6 @@ import {signInWithEmailAndPassword} from 'firebase/auth';
 import { auth } from "../../firebase-client";
 import Input from '../../ui/input/Input'
 
-<<<<<<< HEAD
 import style from "../../assets/scss/login.module.scss";
 
 const Login = () => {
@@ -26,12 +25,6 @@ const Login = () => {
       });  
   }
   
-=======
-import style from '../../assets/scss/login.module.scss'
-import Button from '../../ui/button/Button'
-
-const Login = () => {
->>>>>>> main
   return (
     <div className={style.container}>
       <div className={style.plate}>
@@ -56,7 +49,6 @@ const Login = () => {
               />
             </div>
             <div className={style.element}>
-<<<<<<< HEAD
               <button 
                 type="button" 
                 style={{fontSize: "18px"}} 
@@ -65,9 +57,6 @@ const Login = () => {
               >
                 &nbsp;&nbsp;&nbsp; Sign In &nbsp;&nbsp;&nbsp;
               </button>
-=======
-              <Button label={'Login'} className={'btn-sm btn-primary btn-block'} style={{ height: '50px' }} />
->>>>>>> main
             </div>
           </div>
         </form>

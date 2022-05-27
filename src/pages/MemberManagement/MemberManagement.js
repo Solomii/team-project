@@ -1,23 +1,11 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import {getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword} from 'firebase/auth';
-import AddMemberForm from "../../features/AddMemberForm";
-import { auth } from "../../firebase-client";
-=======
-import React, { useState } from 'react'
-import AddMemberForm from '../../features/AddMemberForm'
->>>>>>> main
+import React, { useState } from "react"
+import AddMemberForm from "../../features/AddMemberForm"
+import { auth } from "../../firebase-client"
 
 import styles from '../../assets/scss/membermanagement.module.scss'
 
 const MemberManagement = () => {
-<<<<<<< HEAD
-  // const auth = getAuth();
-  const [show, setShow] = useState(false);
-  console.log(auth)
-=======
   const [show, setShow] = useState(false)
->>>>>>> main
 
   return (
     <div className={`${styles.tableContainerManagement}`}>

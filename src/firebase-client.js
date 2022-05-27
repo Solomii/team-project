@@ -11,24 +11,7 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 }
 
-<<<<<<< HEAD
-// const firebaseConfig = {
-//   apiKey: "AIzaSyApF9590KybCLP-uzuROO_iJfKyN8nIpQA",
-//   authDomain: "team-project-4f86d.firebaseapp.com",
-//   projectId: "team-project-4f86d",
-//   storageBucket: "team-project-4f86d.appspot.com",
-//   messagingSenderId: "426664838822",
-//   appId: "1:426664838822:web:484e212ca0c7d3fe729667"
-// };
-
-const app = initializeApp(firebaseConfig);
-
-export const db = getFirestore(app)
-export const auth = getAuth(app);
-=======
 const app = initializeApp(firebaseConfig)
 
 export const db = getFirestore(app)
-
-export const auth = getAuth()
->>>>>>> main
+export const auth = getAuth(app)
