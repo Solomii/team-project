@@ -2,22 +2,27 @@ import React, { useState } from 'react'
 
 import AddEventForm from '../../features/AddEventForm'
 import style from '../../assets/scss/eventManagement.module.scss'
-import Button from '../../ui/button/Button'
 
 const EventList = () => {
   const [show, setShow] = useState(false)
 
   return (
     <div className={style.container}>
+      <div>{show ? <AddEventForm closeForm={() => setShow(false)} /> : null}</div>
       <div className="card shadow mb-4 ">
-        <div className="card-header py-3">
-          <h6 className="m-0 font-weight-bold text-primary fs-5 text">The Events Management</h6>
+        <div className={`card-header py-3 ${style.flexBlock}`}>
+          <h2 className={`m-0 font-weight-bold text-primary  text ${style.textResponsive}`}>The Events Management</h2>
+          <button
+            type="button"
+            className={`btn btn-primary w-auto ${style.managementBtn}`}
+            onClick={() => setShow(!show)}
+          >
+            Add Event
+          </button>
         </div>
-        <div className={style.button__wrapper}>
-          <Button label={'Add event'} className={'btn-primary btn-sm'} onClick={() => setShow(!show)}/>
-        </div>
-        <div>{show ? <AddEventForm closeForm={() => setShow(false)} /> : null}</div>
-        <div className="card-body px-5">
+        <div className={style.button__wrapper}></div>
+
+        <div className="card-body px-5  overflow-auto">
           <table className="table table-bordered table-responsive-lg table-hover">
             <thead className="table-light">
               <tr>
