@@ -12,7 +12,7 @@
 }
 .plate {
   position: absolute;
-  width: 35%;
+  width: 25%;
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -23,8 +23,16 @@
   margin-bottom: 20px;
   z-index: 2;
   transform: translateX(-50%);
-  overflow: scroll;
 
+  @media (max-width: 1370px) {
+    width: 30%;
+  }
+  @media (max-width: 1270px) {
+    width: 35%;
+  }
+  @media (max-width: 1170px) {
+    width: 40%;
+  }
   @media (max-width: 1024px) {
     width: 50%;
   }

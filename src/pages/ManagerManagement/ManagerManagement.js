@@ -13,7 +13,7 @@ const ManagerManagement = () => {
             Add Manager
           </button>
         </div>
-        <div className="card-body px-5 overflow-scroll">
+        <div className="card-body px-5  overflow-auto">
           <table className={`table table-bordered shadow-sm`}>
             <thead className={`table-light ${styles.tableHead}`}>
               <tr>
